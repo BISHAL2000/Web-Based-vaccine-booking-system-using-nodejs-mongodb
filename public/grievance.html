@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+     body
+    {
+    background-color:#DAF7A6;
+     }
+    h1
+  	{
+  			font-style:italic;
+  			font-family:courier New;
+  			text-align:center;
+  			font-size:40px;
+            color:#00bfff;
+  	}
+  	table, tr, td
+  	{
+     border: 1px solid black;
+     border-collapse: collapse;
+     padding: 12px;
+     margin-left:auto;
+     margin-right:auto;
+     width:50%;
+     background-color:#9171F3;
+
+  	}
+  	#result
+  	{
+  		color:#F01010;
+  		font-weight:bold;
+  		font-size:20px;
+  		text-align:center;
+  	}
+	  .but {
+    border:double;
+    background-color:#E8EE1D;
+    padding: 5px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+	</style>
+</head>
+<body>
+    <h1>Grievance form</h1>
+    <form onsubmit="return gdisplay()">
+    	<table>
+    		<tr>
+    			<td>Name:</td>
+    			<td><input type="text" name="username" id="username" placeholder="Enter your name" required></td>
+    		</tr>
+    		<tr>
+    		<td>Mail Id:</td>
+    		<td><input type="email" name="mail" id="mail" placeholder="Enter email address" required></td>
+    	    </tr>
+    	    <tr>
+    	    	<td>Complain:</td>
+    	    	<td><textarea name="textArea" id="textArea" placeholder="Enter your complain" rows="4" cols="50" required></textarea>></td>
+    	    </tr>
+            <tr>
+            	<td><input type="submit" name="Submit" value="Submit"></td>
+            	<td><input type="reset" name="reset" value="Reset"></td>
+            </tr>
+    	</table>
+    </form>
+	<button class="but"><a href="index.html">BACK TO HOME PAGE</button>
+    <div id="result"></div>
+    <script>
+    function gdisplay()
+      {
+        var u_name=document.getElementById("username").value;
+        document.getElementById("result").innerHTML="Thank you "+u_name+" for your complain, we will try to resolve it" ;
+         alert("Thank you "+u_name+" for your complain, we will try to resolve it");
+         return false;
+         }
+     </script>>
+</body>
+</html>

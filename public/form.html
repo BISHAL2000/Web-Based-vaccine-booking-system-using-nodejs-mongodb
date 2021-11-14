@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" href="style1.css">
+    <script src="logic.js"></script>
+  </head>
+  	<body>
+    <h1>VACCINE BOOKING</h1>
+    <form  action="/sign_up" method="POST" onsubmit="">
+    <table>
+    <tr>
+      <td>Name</td>
+      <td><input type="text" name="username" id="username" placeholder="Enter your name" required></td>
+    </tr>
+    <tr>
+      <td>Father Name</td>
+      <td><input type="text" name="fathername" id="fathername" placeholder="Enter father name" required></td>
+    </tr>
+    <tr>
+      <td>Phone Number</td>
+      <td><input type="number" name="phone" id="phone" placeholder="Enter phone number" required></td>
+    </tr>
+    <tr>
+      <td>Email Id</td>
+      <td><input type="email" name="mail" id="mail" placeholder="Enter email address" required></td>
+    </tr>
+    <tr>
+      <td>Id proof</td>
+      <td>
+        <select name="proof" id="proof" required>
+          <option value="adhar">Adhar</option>
+          <option value="voter id">Voter Id</option>
+          <option value="passport">Passport</option>
+          <option value="ration card">Ration Card</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Enter Id Number</td>
+      <td><input type="text" name="idnumber" id="idnumber" placeholder="Enter id number" required></td>
+    </tr>
+    <tr>
+      <td>Select hospital</td>
+      <td>
+        <select name="hospital" id="hospital" required>
+          <option value="Sagar Dutta Hospital">Sagar Dutta Hospital</option>
+          <option value="N.R.S. Hospital">N.R.S. Hospital</option>
+          <option value="Sri. Balram Sevamandir">Sri. Balram Sevamandir</option>
+          <option value="R.G. Kar Hospital">R.G. Kar Hospital</option>
+          <option value="Matri Sadan Hospital">Matri Sadan Hospital</option>
+          <option value="Panihati State General Hospital">Panihati State General Hospital</option>
+          <option value="S.S.K.M. Hospital">S.S.K.M. Hospital</option>
+          <option value="Ariyan Hospital">Ariyan Hospital</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Select vaccine</td>
+      <td>
+        <select name="vaccine" id="vaccine" required>
+          <option value="COVISHIELD">COVISHIELD</option>
+          <option value="COVAXIN">COVAXIN</option>
+          <option value="SPUTNIK-V">SPUTNIK-V</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Enter dose</td>
+      <td>
+        <input type="number" name="dose" id="dose" placeholder="Enter dose number" required>
+      </td>
+    </tr>
+    <tr>
+      <td>Enter Date</td>
+      <td><input type="date" name="Date" id="Date"></td>
+    </tr>
+    <tr>
+      <td>Select time slot</td>
+      <td>
+        <select name="slot" id="slot">
+          <option value="9-12">9-12</option>
+          <option value="12-3">12-3</option>
+          <option value="3-6">3-6</option>
+        </select>
+      </td>>
+    </tr>
+    <tr>
+      <td><input type="submit" name="Submit" value="Submit"><input type="reset" name="reset" value="Reset"></td>
+    </tr>
+    </table>
+    </form>
+
+    <div id="result"></div>
+
+    </body>
+
+</html>

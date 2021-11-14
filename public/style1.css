@@ -1,0 +1,39 @@
+   body
+   {
+    background-color:#DAF7A6;
+    }
+    h1
+  	{
+  			font-style:italic;
+  			font-family:courier New;
+  			text-align:center;
+  			font-size:40px;
+            color:#00bfff;
+  	}
+  	table, tr, td
+  	{
+     border: 1px solid black;
+     border-collapse: collapse;
+     padding: 12px;
+     margin-left:auto;
+     margin-right:auto;
+     width:50%;
+     background-color:#9171F3;
+
+  	}
+	  .but {
+		border:double;
+		background-color:#E8EE1D;
+		padding: 5px 5px;
+		font-size: 20px;
+		cursor: pointer;
+		display: inline-block;
+	  }
+  	#result
+  	{
+  		color:#F01010;
+  		font-weight:bold;
+  		font-size:20px;
+  		text-align:center;
+  	}
+	  

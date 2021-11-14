@@ -1,0 +1,38 @@
+
+      body
+  		{
+         background-color:#DAF7A6;
+  		}
+  		h1
+  		{
+  			color:#770080;
+  			font-style:italic;
+  			font-family:courier New;
+  			text-align:left;
+        color:#00bfff;
+  		}
+      .box
+      {
+        background-image:url(image.jpg);
+        padding:100px 100px;
+      }
+      p
+      {
+        font-style:italic;
+        font-size:70px;
+        font-weight:bold;
+        text-align:center;
+      }
+      .instruction
+      {
+        background-color:#DAF7A6;
+        padding:10px 10px;
+      }
+      .but {
+    border:double;
+    background-color:#E8EE1D;
+    padding: 5px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
